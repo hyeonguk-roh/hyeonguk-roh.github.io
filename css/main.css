@@ -1,13 +1,16 @@
 body {
     font-family: "Verdana", sans-serif;
 }
-nav {
+.menu {
     border: none;
     border-bottom: 3px solid #3b3b4f;
+    margin: auto;
+    padding: none;
 }
-nav ul {
-     list-style: none;
+.menu ul {
+    list-style: none;
 }
-nav li {
-     display: inline;
+.menu li {
+    display: inline;
+    padding: 2px;
 }
