@@ -1,4 +1,13 @@
+body {
+    font-family: Verdana, sans-serif;
+}
 nav {
     border: none;
     border-bottom: 3px solid #3b3b4f;
+    nav ul {
+        list-style: none;
+    }
+    nav li {
+        display: inline;
+    }
 }
