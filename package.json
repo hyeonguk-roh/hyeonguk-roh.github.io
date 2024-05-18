@@ -1,0 +1,27 @@
+{
+  "name": "hyeonguk-roh-portfolio",
+  "version": "1.0.0",
+  "description": "hyeonguk roh portfolio",
+  "keywords": [
+    "hyeonguk",
+    "roh",
+    "portfolio"
+  ],
+  "main": "src/index.jsx",
+  "devDependencies": {
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "latest",
+    "r3f-pack": "^2.8.1",
+    "r3f-perf": "^7.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "three": "latest"
+  },
+  "scripts": {
+    "start": "r3f-pack start",
+    "build": "r3f-pack build"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.23.1"
+  }
+}
