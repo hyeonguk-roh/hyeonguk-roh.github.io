@@ -8,9 +8,11 @@
     "portfolio"
   ],
   "main": "src/index.jsx",
+  "homepage": ".",
   "devDependencies": {
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "latest",
+    "gh-pages": "^6.1.1",
     "r3f-pack": "^2.8.1",
     "r3f-perf": "^7.2.1",
     "react": "18.2.0",
@@ -19,7 +21,8 @@
   },
   "scripts": {
     "start": "r3f-pack start",
-    "build": "r3f-pack build"
+    "build": "r3f-pack build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react-router-dom": "^6.23.1"
