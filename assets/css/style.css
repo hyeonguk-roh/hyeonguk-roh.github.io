@@ -4,24 +4,24 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-  }
-  header {
+}
+header {
     background: #f4f4f4;
     padding: 10px;
     text-align: center;
-  }
-  nav a {
+}
+nav a {
     margin: 0 10px;
     text-decoration: none;
     color: #007BFF;
-  }
-  main {
+}
+main {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
-  }
-  footer {
+}
+footer {
     text-align: center;
     padding: 10px;
     background: #f4f4f4;
-  }
+}

@@ -1,8 +1,11 @@
-title: Hyeonguk Roh Portfolio
-description: Portfolio site to showcase my projects
+title: Your Portfolio
+description: A professional portfolio showcasing my projects
 baseurl: ""
-url: "hyeonguk-roh.github.io"
+url: "https://username.github.io" # Replace with your username
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+collections:
+  projects:
+    output: true
