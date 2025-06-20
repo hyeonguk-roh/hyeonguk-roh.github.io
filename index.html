@@ -7,25 +7,58 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="container">
-            <h1>Hyeonguk Roh</h1>
-            <p class="subtitle">Experience Designer</p>
+            <div class="nav-content">
+                <div class="nav-logo">HR</div>
+                <div class="nav-links">
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hyeonguk Roh</h1>
+                    <p class="hero-subtitle">Experience Designer & Game Developer</p>
+                    <p class="hero-description">Creating immersive digital experiences through innovative design and interactive gameplay.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
         </div>
     </header>
 
     <main class="container">
-        <section class="projects">
-            <h2>Projects</h2>
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Explore my latest work in game design and interactive experiences</p>
+            </div>
             <div class="project-grid">
                 <a href="swap-lane" class="project-card">
                     <div class="project-thumbnail">
-                        <img src="assets/swap-lane.png" alt="Swaplane Project" onerror="this.src='assets/placeholder.png'">
+                        <img src="assets/swap-lane.png" alt="Swap Lane Project" onerror="this.src='assets/placeholder.png'">
+                        <div class="project-overlay">
+                            <span class="view-project">View Project →</span>
+                        </div>
                     </div>
                     <div class="project-info">
+                        <div class="project-category">Game Design</div>
                         <h3>Swap Lane</h3>
                         <p>Highway Survival</p>
                     </div>
@@ -33,8 +66,12 @@
                 <a href="num-grid" class="project-card">
                     <div class="project-thumbnail">
                         <img src="assets/num-grid.png" alt="Num Grid Project" onerror="this.src='assets/placeholder.png'">
+                        <div class="project-overlay">
+                            <span class="view-project">View Project →</span>
+                        </div>
                     </div>
                     <div class="project-info">
+                        <div class="project-category">Puzzle Game</div>
                         <h3>Num Grid</h3>
                         <p>Number Grid Game</p>
                     </div>
@@ -42,21 +79,79 @@
                 <a href="glow-grid" class="project-card">
                     <div class="project-thumbnail">
                         <img src="assets/glow-grid.png" alt="Glow Grid Project" onerror="this.src='assets/placeholder.png'">
+                        <div class="project-overlay">
+                            <span class="view-project">View Project →</span>
+                        </div>
                     </div>
                     <div class="project-info">
+                        <div class="project-category">Visual Design</div>
                         <h3>Glow Grid</h3>
                         <p>Glow Grid Game</p>
                     </div>
                 </a>
-                <!-- More project cards can be added here -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Let's Connect</h2>
+                <p>Ready to collaborate on your next project?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:hyeonguk.roh@gmail.com" class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hyeonguk.roh@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hyeonguk-roh/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/hyeonguk-roh</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Hyeonguk Roh. All rights reserved.</p>
+            <div class="footer-content">
+                <p>&copy; 2025 Hyeonguk Roh. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Handle page refresh to always start at top
+        window.addEventListener('load', function() {
+            // Always scroll to top on page load
+            window.scrollTo(0, 0);
+            
+            // Remove any hash from URL
+            if (window.location.hash) {
+                history.replaceState(null, null, window.location.pathname);
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
