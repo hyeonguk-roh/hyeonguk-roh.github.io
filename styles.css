@@ -330,6 +330,71 @@ main {
     font-size: 0.875rem;
 }
 
+/* Devlogs Section */
+.devlogs {
+    margin-top: 4rem;
+}
+
+.devlog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.devlog-card {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-light);
+}
+
+.devlog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.devlog-date {
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.devlog-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.devlog-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.devlog-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: var(--gradient-secondary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
 /* Contact Section */
 .contact {
     background: var(--card-background);
@@ -453,6 +518,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .devlog-grid {
+        grid-template-columns: 1fr;
+    }
+
     .contact {
         padding: 2rem;
     }
@@ -484,4 +553,9 @@ footer {
         padding: 0.75rem 1.5rem;
         font-size: 0.875rem;
     }
+}
+
+.view-all-container {
+    text-align: center;
+    margin-top: 3rem;
 } 
