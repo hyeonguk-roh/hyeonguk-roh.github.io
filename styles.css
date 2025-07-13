@@ -176,7 +176,7 @@ main p {
     transform: translate(-50%, -50%) rotate(360deg) translateX(300px) rotate(-360deg) scale(var(--hover-scale, 1));
   }
 }
-
+*/
 /* Hover Effects */
 .card:hover {
   background: rgba(255, 255, 255, 0.1);
