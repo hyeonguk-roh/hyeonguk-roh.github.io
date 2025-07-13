@@ -84,6 +84,7 @@ main p {
   margin: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -122,8 +123,8 @@ main p {
 
 /* Card Styles */
 .card {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background: white;
   padding: 2px;
@@ -135,6 +136,7 @@ main p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .skill-logo {
@@ -142,6 +144,7 @@ main p {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .skill-info {
@@ -150,22 +153,12 @@ main p {
   left: 50%;
   transform: translate(-50%, -50%) scale(calc(1 / var(--hover-scale, 1)));
   color: white;
-  font-size: 14px;
   font-weight: 500;
-  opacity: 0;
   visibility: hidden;
   text-align: center;
   z-index: 10;
-  width: 80px;
-  padding: 0 5px;
-  box-sizing: border-box;
-  line-height: 1.2;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
-
-
-
 
 
 .card:focus {
@@ -177,5 +170,9 @@ main p {
   .skill-section {
     width: 200px;
     height: 200px;
+  }
+  .card {
+    width: 50px;
+    height: 50px;
   }
 }

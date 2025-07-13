@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Animation settings
   const animationDuration = 60; // seconds
   const isMobile = window.innerWidth <= 1024;
-  const orbitRadius = isMobile ? 200 : 300;
+  const orbitRadius = isMobile ? 150 : 300;
   
   // Calculate spacing
   const delayBetweenCards = animationDuration / totalCards;
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const x = Math.cos(radians) * orbitRadius;
       const y = Math.sin(radians) * orbitRadius;
       
-      card.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(${card.dataset.scale || 1})`;
+      card.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
     });
     
     requestAnimationFrame(animateOrbit);
@@ -30,14 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Initialize cards
   cards.forEach((card, index) => {
-    // Add hover effects for dynamic sizing
+    // Add hover effects
     const skillInfo = card.querySelector('.skill-info');
     const textLength = skillInfo.textContent.length;
     
-    let scale = 1.5;
-    
     card.addEventListener('mouseenter', () => {
-      card.dataset.scale = scale;
       card.style.background = 'rgba(255, 255, 255, 0.1)';
       card.style.border = '1px solid rgba(255, 255, 255, 0.2)';
       
@@ -47,10 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
       skillLogo.style.opacity = '0';
       skillInfo.style.opacity = '1';
       skillInfo.style.visibility = 'visible';
+      if (isMobile) {
+        skillInfo.style.fontSize = textLength > 7 ? '7px' : '12px';
+      } else {
+        skillInfo.style.fontSize = textLength > 7 ? '12px' : '14px';
+      }
     });
     
     card.addEventListener('mouseleave', () => {
-      card.dataset.scale = '1';
       card.style.background = 'white';
       card.style.border = 'none';
       
