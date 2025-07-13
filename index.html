@@ -1,181 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyeonguk Roh - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyeonguk Roh - Software Developer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="nav-logo">HR</div>
-                <div class="nav-links">
-                    <a href="#projects">Projects</a>
-                    <a href="#devlogs">Devlogs</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">HR</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Arcade</a>
+        <a href="#">Projects</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+  
+  <main>
+    <div class="title">
+      <h1>Hyeonguk Roh</h1>
+      <div class="title-text">
+        <p>Game</p>
+        <p>Developer</p>
+      </div>
+    </div>
+    <div class="skill-section">
+      <div class="skill-cards">
+        <div class="card" data-skill="html">
+          <img src="assets/skillset_logos/HTML.png" alt="HTML5" class="skill-logo" loading="lazy">
+          <span class="skill-info">HTML5</span>
         </div>
-    </nav>
-
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hyeonguk Roh</h1>
-                    <p class="hero-subtitle">Experience Designer & Game Developer</p>
-                    <p class="hero-description">Creating immersive digital experiences through innovative design and interactive gameplay.</p>
-                    <div class="hero-cta">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
+        <div class="card" data-skill="css">
+          <img src="assets/skillset_logos/CSS.png" alt="CSS3" class="skill-logo" loading="lazy">
+          <span class="skill-info">CSS3</span>
         </div>
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
+        <div class="card" data-skill="tailwind">
+          <img src="assets/skillset_logos/TailwindCSS.png" alt="Tailwind CSS" class="skill-logo" loading="lazy">
+          <span class="skill-info">Tailwind CSS</span>
         </div>
-    </header>
-
-    <main class="container">
-        <section id="projects" class="projects">
-            <div class="section-header">
-                <h2>Featured Projects</h2>
-                <p>Explore my latest work in game design and interactive experiences</p>
-            </div>
-            <div class="project-grid">
-                <a href="glow-grid" class="project-card">
-                    <div class="project-thumbnail">
-                        <img src="assets/glow-grid.png" alt="Glow Grid Project" onerror="this.src='assets/placeholder.png'">
-                        <div class="project-overlay">
-                            <span class="view-project">View Project →</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-category">Visual Design</div>
-                        <h3>Glow Grid</h3>
-                        <p>Glow Grid Game</p>
-                    </div>
-                </a>
-                <a href="num-grid" class="project-card">
-                    <div class="project-thumbnail">
-                        <img src="assets/num-grid.png" alt="Num Grid Project" onerror="this.src='assets/placeholder.png'">
-                        <div class="project-overlay">
-                            <span class="view-project">View Project →</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-category">Puzzle Game</div>
-                        <h3>Num Grid</h3>
-                        <p>Number Grid Game</p>
-                    </div>
-                </a>
-            </div>
-            <div class="view-all-container">
-                <a href="projects.html" class="btn btn-secondary">View All Projects</a>
-            </div>
-        </section>
-
-        <section id="devlogs" class="devlogs">
-            <div class="section-header">
-                <h2>Development Logs</h2>
-                <p>Behind the scenes of my game development journey</p>
-            </div>
-            <div class="devlog-grid">
-                <article class="devlog-card">
-                    <div class="devlog-date">June 20, 2025</div>
-                    <h3>Started "What Are We Playing Again?"</h3>
-                    <p>Embarked on an ambitious multiplayer card-based board game that defies traditional gaming conventions. This experimental project combines chess, checkers, and blackjack into a chaotic yet strategic experience where players must adapt to constantly changing rules and embrace the beautiful chaos of randomness.</p>
-                    <div class="devlog-tags">
-                        <span class="tag">Multiplayer</span>
-                        <span class="tag">Card Game</span>
-                        <span class="tag">Experimental</span>
-                    </div>
-                </article>
-                <article class="devlog-card">
-                    <div class="devlog-date">June 20, 2025</div>
-                    <h3>Created Glow Grid</h3>
-                    <p>A visual design experiment exploring light and color interactions in a grid-based puzzle game. This project focused on creating an immersive experience through dynamic lighting effects and smooth animations.</p>
-                    <div class="devlog-tags">
-                        <span class="tag">Visual Design</span>
-                        <span class="tag">Puzzle Game</span>
-                        <span class="tag">Lighting Effects</span>
-                    </div>
-                </article>
-            </div>
-            <div class="view-all-container">
-                <a href="devlogs.html" class="btn btn-secondary">View All Devlogs</a>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="section-header">
-                <h2>Let's Connect</h2>
-                <p>Ready to collaborate on your next project?</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <a href="mailto:hyeonguk.roh@gmail.com" class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>hyeonguk.roh@gmail.com</p>
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/hyeonguk-roh/" target="_blank" rel="noopener noreferrer" class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/hyeonguk-roh</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Hyeonguk Roh. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#projects">Projects</a>
-                    <a href="#devlogs">Devlogs</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
+        <div class="card" data-skill="js">
+          <img src="assets/skillset_logos/Javascript.png" alt="JavaScript" class="skill-logo" loading="lazy">
+          <span class="skill-info">Java Script</span>
         </div>
-    </footer>
-
-    <script>
-        // Handle page refresh to always start at top
-        window.addEventListener('load', function() {
-            // Always scroll to top on page load
-            window.scrollTo(0, 0);
-            
-            // Remove any hash from URL
-            if (window.location.hash) {
-                history.replaceState(null, null, window.location.pathname);
-            }
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+        <div class="card" data-skill="react">
+          <img src="assets/skillset_logos/React.png" alt="React" class="skill-logo" loading="lazy">
+          <span class="skill-info">React</span>
+        </div>
+        <div class="card" data-skill="nodejs">
+          <img src="assets/skillset_logos/NodeJS.png" alt="Node.js" class="skill-logo" loading="lazy">
+          <span class="skill-info">Node.js</span>
+        </div>
+        <div class="card" data-skill="python">
+          <img src="assets/skillset_logos/Python.png" alt="Python" class="skill-logo" loading="lazy">
+          <span class="skill-info">Python</span>
+        </div>
+        <div class="card" data-skill="java">
+          <img src="assets/skillset_logos/Java.png" alt="Java" class="skill-logo" loading="lazy">
+          <span class="skill-info">Java</span>
+        </div>
+        <div class="card" data-skill="sql">
+          <img src="assets/skillset_logos/SQL.png" alt="SQL" class="skill-logo" loading="lazy">
+          <span class="skill-info">SQL</span>
+        </div>
+        <div class="card" data-skill="c">
+          <img src="assets/skillset_logos/C.png" alt="C" class="skill-logo" loading="lazy">
+          <span class="skill-info">C</span>
+        </div>
+        <div class="card" data-skill="cpp">
+          <img src="assets/skillset_logos/C-plus-plus.png" alt="C++" class="skill-logo" loading="lazy">
+          <span class="skill-info">C++</span>
+        </div>
+        <div class="card" data-skill="csharp">
+          <img src="assets/skillset_logos/C-sharp.png" alt="C#" class="skill-logo" loading="lazy">
+          <span class="skill-info">C#</span>
+        </div>
+        <div class="card" data-skill="git">
+          <img src="assets/skillset_logos/Git.png" alt="Git" class="skill-logo" loading="lazy">
+          <span class="skill-info">Git</span>
+        </div>
+        <div class="card" data-skill="unity">
+          <img src="assets/skillset_logos/Unity.png" alt="Unity" class="skill-logo" loading="lazy">
+          <span class="skill-info">Unity</span>
+        </div>
+        <div class="card" data-skill="godot">
+          <img src="assets/skillset_logos/Godot.png" alt="Godot" class="skill-logo" loading="lazy">
+          <span class="skill-info">Godot</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
