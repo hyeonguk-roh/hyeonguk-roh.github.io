@@ -135,9 +135,6 @@ main p {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: orbit 60s linear infinite;
-  --hover-scale: 1;
-  transition: --hover-scale 0.3s ease;
 }
 
 .skill-logo {
@@ -167,39 +164,18 @@ main p {
   overflow-wrap: break-word;
 }
 
-/* Orbit Animation */
-@keyframes orbit {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(300px) rotate(0deg) scale(var(--hover-scale, 1));
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(300px) rotate(-360deg) scale(var(--hover-scale, 1));
-  }
-}
-*/
-/* Hover Effects */
-.card:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
 
-.card:hover .skill-logo {
-  opacity: 0;
-}
 
-.card:hover .skill-info {
-  opacity: 1;
-  visibility: visible;
-}
+
 
 .card:focus {
   outline: 2px solid #6366f1;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .skill-section {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
 }
