@@ -1,12 +1,36 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
+  // Mobile menu functionality
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+      navLinks.classList.remove('active');
+    }
+  });
+
   const cards = document.querySelectorAll('.card');
   const totalCards = cards.length;
   
   // Animation settings
   const animationDuration = 60; // seconds
-  const isMobile = window.innerWidth <= 1024;
-  const orbitRadius = isMobile ? 150 : 300;
+  
+  // Dynamic orbit radius function
+  function getOrbitRadius() {
+    const width = window.innerWidth;
+    if (width <= 768) return 100; // Mobile
+    if (width <= 1024) return 150; // Tablet
+    if (width <= 1440) return 250; // Small desktop
+    return 300; // Large desktop
+  }
+  
+  let orbitRadius = getOrbitRadius();
   
   // Calculate spacing
   const delayBetweenCards = animationDuration / totalCards;
@@ -44,8 +68,13 @@ document.addEventListener('DOMContentLoaded', () => {
       skillLogo.style.opacity = '0';
       skillInfo.style.opacity = '1';
       skillInfo.style.visibility = 'visible';
-      if (isMobile) {
-        skillInfo.style.fontSize = textLength > 7 ? '7px' : '12px';
+      
+      // Dynamic font sizing based on screen size
+      const width = window.innerWidth;
+      if (width <= 768) {
+        skillInfo.style.fontSize = textLength > 7 ? '7px' : '10px';
+      } else if (width <= 1024) {
+        skillInfo.style.fontSize = textLength > 7 ? '10px' : '12px';
       } else {
         skillInfo.style.fontSize = textLength > 7 ? '12px' : '14px';
       }
@@ -66,6 +95,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Start orbit animation
   animateOrbit();
+  
+  // Update orbit radius on window resize
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      orbitRadius = getOrbitRadius();
+    }, 100); // Debounce resize events
+  });
   
   // Title cycling animation with scroll effect
   const titleElement = document.querySelector('.title-text p:first-child');
