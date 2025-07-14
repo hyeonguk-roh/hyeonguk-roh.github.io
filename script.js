@@ -24,8 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Dynamic orbit radius function
   function getOrbitRadius() {
     const width = window.innerWidth;
-    if (width <= 768) return 100; // Mobile
-    if (width <= 1024) return 150; // Tablet
+    if (width <= 768) return 150; // Mobile
     if (width <= 1440) return 250; // Small desktop
     return 300; // Large desktop
   }
