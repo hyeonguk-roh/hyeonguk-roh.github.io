@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Unity Game Development: Getting Started with C# - Hyeonguk Roh | Game Development</title>
+  <meta name="title" content="Unity Game Development: Getting Started with C# - Hyeonguk Roh | Game Development">
+  <meta name="description" content="Learn the fundamentals of Unity game development with C#. From setting up your first project to creating basic game mechanics, this guide covers everything beginners need to know.">
+  <meta name="keywords" content="Unity Game Development, C# Programming, Game Development Tutorial, Unity Engine, Game Programming, Unity C#, Indie Game Development, Game Design">
+  <meta name="author" content="Hyeonguk Roh">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://hyeonguk-roh.github.io/blog/posts/unity-game-development-getting-started.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hyeonguk-roh.github.io/blog/posts/unity-game-development-getting-started.html">
+  <meta property="og:title" content="Unity Game Development: Getting Started with C# - Hyeonguk Roh | Game Development">
+  <meta property="og:description" content="Learn the fundamentals of Unity game development with C#. From setting up your first project to creating basic game mechanics, this guide covers everything beginners need to know.">
+  <meta property="og:image" content="https://hyeonguk-roh.github.io/assets/og-image.jpg">
+  <meta property="og:site_name" content="Hyeonguk Roh Portfolio">
+  <meta property="article:author" content="Hyeonguk Roh">
+  <meta property="article:published_time" content="2025-07-15T00:00:00+00:00">
+  <meta property="article:section" content="Game Development">
+  <meta property="article:tag" content="Unity, Game Development, C#, Programming, Game Engine, Tutorial">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://hyeonguk-roh.github.io/blog/posts/unity-game-development-getting-started.html">
+  <meta property="twitter:title" content="Unity Game Development: Getting Started with C# - Hyeonguk Roh | Game Development">
+  <meta property="twitter:description" content="Learn the fundamentals of Unity game development with C#. From setting up your first project to creating basic game mechanics, this guide covers everything beginners need to know.">
+  <meta property="twitter:image" content="https://hyeonguk-roh.github.io/assets/og-image.jpg">
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#131313">
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico?">
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/favicon.ico?">
+  <link rel="apple-touch-icon" href="../../assets/favicon.ico?">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="../../css/base.css" as="style">
+  <link rel="preload" href="../../css/navigation.css" as="style">
+  <link rel="preload" href="../../css/blog-post.css" as="style">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="../../css/shared.css">
+  <link rel="stylesheet" type="text/css" href="../../css/blog-post.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Unity Game Development: Getting Started with C#",
+    "description": "Learn the fundamentals of Unity game development with C#. From setting up your first project to creating basic game mechanics, this guide covers everything beginners need to know.",
+    "image": "https://hyeonguk-roh.github.io/assets/og-image.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Hyeonguk Roh",
+      "jobTitle": "Game Developer & Software Engineer",
+      "url": "https://hyeonguk-roh.github.io"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Hyeonguk Roh"
+    },
+    "datePublished": "2025-07-15T00:00:00+00:00",
+    "dateModified": "2025-07-15T00:00:00+00:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hyeonguk-roh.github.io/blog/posts/unity-game-development-getting-started.html"
+    },
+    "keywords": ["Unity", "Game Development", "C#", "Programming", "Game Engine", "Tutorial"],
+    "articleSection": "Game Development",
+    "inLanguage": "en-US"
+  }
+  </script>
+</head>
+<body>
+    <main>
+        <article class="post-container" role="article" aria-labelledby="post-title">
+            <header>
+                <h1 id="post-title">Unity Game Development: Getting Started with C#</h1>
+                <div class="post-metadata">
+                    <time id="post-date" datetime="2025-07-15">2025-07-15</time>
+                    <span id="post-author">Hyeonguk Roh</span>
+                </div>
+            </header>
+            
+            <div id="post-content" class="post-content">
+                <p>Unity is one of the most popular game engines in the world, powering thousands of games across multiple platforms. Whether you're a complete beginner or transitioning from another engine, this guide will help you get started with Unity game development using C#.</p>
+                
+                <h2>Setting Up Your Development Environment</h2>
+                <p>Before diving into Unity development, you'll need to set up your development environment properly. This includes installing Unity Hub, the Unity Editor, and a code editor.</p>
+                
+                <h3>Installing Unity Hub</h3>
+                <p>Unity Hub is the central management tool for Unity installations. It allows you to manage multiple Unity versions and projects from one place.</p>
+                <div class="code-example">
+                    <pre><code>// Download Unity Hub from unity.com
+// Install and create a Unity account
+// Use Unity Hub to install the latest LTS version of Unity</code></pre>
+                </div>
+                
+                <h3>Choosing Your Code Editor</h3>
+                <p>While Unity comes with Visual Studio by default, many developers prefer alternatives like Visual Studio Code or Rider. Here's how to set up VS Code for Unity development:</p>
+                <div class="code-example">
+                    <pre><code>// Install Visual Studio Code
+// Install C# extension for VS Code
+// Install Unity extension for VS Code
+// Configure Unity to use VS Code as external editor</code></pre>
+                </div>
+                
+                <h2>Creating Your First Unity Project</h2>
+                <p>Once your environment is set up, it's time to create your first Unity project. Unity offers several templates to get you started.</p>
+                
+                <h3>Project Templates</h3>
+                <ul>
+                    <li><strong>3D:</strong> For 3D games and applications</li>
+                    <li><strong>2D:</strong> For 2D games and applications</li>
+                    <li><strong>3D (URP):</strong> For 3D games using Universal Render Pipeline</li>
+                    <li><strong>2D (URP):</strong> For 2D games using Universal Render Pipeline</li>
+                </ul>
+                
+                <h2>Understanding Unity's Interface</h2>
+                <p>Unity's interface consists of several key windows and panels that you'll use throughout development.</p>
+                
+                <h3>Key Windows</h3>
+                <ul>
+                    <li><strong>Scene View:</strong> Where you build and arrange your game world</li>
+                    <li><strong>Game View:</strong> Shows how your game will look to players</li>
+                    <li><strong>Hierarchy:</strong> Lists all objects in your current scene</li>
+                    <li><strong>Project:</strong> Shows all assets in your project</li>
+                    <li><strong>Inspector:</strong> Displays and allows editing of selected object properties</li>
+                </ul>
+                
+                <h2>Your First C# Script</h2>
+                <p>C# is the primary programming language used in Unity. Let's create a simple script to understand the basics.</p>
+                
+                <h3>Creating a Script</h3>
+                <div class="code-example">
+                    <pre><code>using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+    [SerializeField] private float moveSpeed = 5f;
+    
+    void Update()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+        
+        Vector3 movement = new Vector3(horizontalInput, 0f, verticalInput);
+        transform.Translate(movement * moveSpeed * Time.deltaTime);
+    }
+}</code></pre>
+                </div>
+                
+                <h3>Understanding the Code</h3>
+                <ul>
+                    <li><strong>MonoBehaviour:</strong> Base class for all Unity scripts</li>
+                    <li><strong>[SerializeField]:</strong> Makes private variables visible in the Inspector</li>
+                    <li><strong>Update():</strong> Called every frame</li>
+                    <li><strong>Input.GetAxis():</strong> Gets input from keyboard/gamepad</li>
+                    <li><strong>Time.deltaTime:</strong> Time since last frame (for smooth movement)</li>
+                </ul>
+                
+                <h2>Game Objects and Components</h2>
+                <p>In Unity, everything is a GameObject. GameObjects can have multiple components that define their behavior and appearance.</p>
+                
+                <h3>Common Components</h3>
+                <ul>
+                    <li><strong>Transform:</strong> Position, rotation, and scale</li>
+                    <li><strong>Mesh Renderer:</strong> Renders 3D meshes</li>
+                    <li><strong>Collider:</strong> Defines collision boundaries</li>
+                    <li><strong>Rigidbody:</strong> Adds physics simulation</li>
+                    <li><strong>Scripts:</strong> Custom C# components</li>
+                </ul>
+                
+                <h2>Basic Game Mechanics</h2>
+                <p>Let's implement some common game mechanics to get you started.</p>
+                
+                <h3>Player Movement</h3>
+                <div class="code-example">
+                    <pre><code>public class PlayerMovement : MonoBehaviour
+{
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpForce = 5f;
+    
+    private Rigidbody rb;
+    private bool isGrounded;
+    
+    void Start()
+    {
+        rb = GetComponent&lt;Rigidbody&gt;();
+    }
+    
+    void Update()
+    {
+        // Handle movement
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        
+        Vector3 movement = new Vector3(horizontal, 0f, vertical);
+        transform.Translate(movement * speed * Time.deltaTime);
+        
+        // Handle jumping
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+    }
+    
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+    
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+    }
+}</code></pre>
+                </div>
+                
+                <h3>Collecting Items</h3>
+                <div class="code-example">
+                    <pre><code>public class Collectible : MonoBehaviour
+{
+    [SerializeField] private int pointValue = 10;
+    
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Add points to player
+            GameManager.Instance.AddPoints(pointValue);
+            
+            // Play collection effect
+            AudioManager.Instance.PlayCollectSound();
+            
+            // Destroy the collectible
+            Destroy(gameObject);
+        }
+    }
+}</code></pre>
+                </div>
+                
+                <h2>Best Practices for Unity Development</h2>
+                <p>Following best practices will make your Unity projects more maintainable and efficient.</p>
+                
+                <h3>Coding Standards</h3>
+                <ul>
+                    <li>Use PascalCase for class names and public methods</li>
+                    <li>Use camelCase for private variables and methods</li>
+                    <li>Add comments to explain complex logic</li>
+                    <li>Use [SerializeField] instead of public for inspector variables</li>
+                    <li>Cache component references in Start() or Awake()</li>
+                </ul>
+                
+                <h3>Performance Tips</h3>
+                <ul>
+                    <li>Avoid using GameObject.Find() in Update()</li>
+                    <li>Use object pooling for frequently created/destroyed objects</li>
+                    <li>Minimize garbage collection by reusing objects</li>
+                    <li>Use LOD (Level of Detail) for complex models</li>
+                    <li>Optimize your textures and models</li>
+                </ul>
+                
+                <h2>Next Steps</h2>
+                <p>Now that you have the basics down, here are some areas to explore next:</p>
+                
+                <ul>
+                    <li><strong>UI System:</strong> Learn to create user interfaces</li>
+                    <li><strong>Animation:</strong> Implement character and object animations</li>
+                    <li><strong>Audio:</strong> Add sound effects and music</li>
+                    <li><strong>Particle Systems:</strong> Create visual effects</li>
+                    <li><strong>Networking:</strong> Add multiplayer functionality</li>
+                    <li><strong>Optimization:</strong> Improve performance and reduce build size</li>
+                </ul>
+                
+                <h2>Conclusion</h2>
+                <p>Unity game development with C# is an exciting journey that combines creativity with technical skills. Start with simple projects, experiment with different features, and gradually build up to more complex games. Remember, the best way to learn is by doing - so get out there and start creating!</p>
+                
+                <p>Whether you're building your first 2D platformer or a complex 3D adventure, Unity provides the tools and flexibility to bring your game ideas to life. Happy coding!</p>
+            </div>
+            
+            <footer class="post-footer">
+                <a href="../../links/blog.html" class="back-link">← Back to all posts</a>
+            </footer>
+        </article>
+    </main>
+    
+    <!-- Scripts -->
+    <script src="../../scripts/nav.js"></script>
+    <script src="../../scripts/script.js"></script>
+</body>
+</html> 

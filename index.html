@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Resource Hints for Performance -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    
     <!-- Primary Meta Tags -->
     <title>Hyeonguk Roh - Game Developer & Software Engineer | Portfolio</title>
     <meta name="title" content="Hyeonguk Roh - Game Developer & Software Engineer | Portfolio">
@@ -61,15 +66,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?">
     
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="css/base.css" as="style">
-    <link rel="preload" href="css/navigation.css" as="style">
-    <link rel="preload" href="css/home.css" as="style">
+    <link rel="preload" href="css/home-combined.css" as="style">
     <link rel="preload" href="scripts/nav.js" as="script">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/home-combined.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -149,23 +150,23 @@
         <section class="skill-section" role="region" aria-labelledby="skills-heading">
             <h2 id="skills-heading" class="sr-only">Technical Skills and Technologies</h2>
             <div class="card" data-skill="html" role="button" tabindex="0" aria-label="HTML5 - HyperText Markup Language">
-                <img src="assets/skillset_logos/html.svg" alt="HTML5" class="skill-logo" loading="lazy" width="80" height="80">
+                <img src="assets/skillset_logos/html.svg" alt="HTML5" class="skill-logo" loading="eager" fetchpriority="high" width="80" height="80">
                 <span class="skill-info">HTML5</span>
             </div>
             <div class="card" data-skill="css" role="button" tabindex="0" aria-label="CSS3 - Cascading Style Sheets">
-                <img src="assets/skillset_logos/css.svg" alt="CSS3" class="skill-logo" loading="lazy" width="80" height="80">
+                <img src="assets/skillset_logos/css.svg" alt="CSS3" class="skill-logo" loading="eager" fetchpriority="high" width="80" height="80">
                 <span class="skill-info">CSS3</span>
             </div>
             <div class="card" data-skill="tailwind" role="button" tabindex="0" aria-label="Tailwind CSS - Utility-first CSS framework">
-                <img src="assets/skillset_logos/tailwind.svg" alt="Tailwind CSS" class="skill-logo" loading="lazy" width="80" height="80">
+                <img src="assets/skillset_logos/tailwind.svg" alt="Tailwind CSS" class="skill-logo" loading="eager" fetchpriority="high" width="80" height="80">
                 <span class="skill-info">Tailwind CSS</span>
             </div>
             <div class="card" data-skill="js" role="button" tabindex="0" aria-label="JavaScript - Programming language">
-                <img src="assets/skillset_logos/js.svg" alt="JavaScript" class="skill-logo" loading="lazy" width="80" height="80">
+                <img src="assets/skillset_logos/js.svg" alt="JavaScript" class="skill-logo" loading="eager" fetchpriority="high" width="80" height="80">
                 <span class="skill-info">JavaScript</span>
             </div>
             <div class="card" data-skill="react" role="button" tabindex="0" aria-label="React - JavaScript library for building user interfaces">
-                <img src="assets/skillset_logos/react.svg" alt="React" class="skill-logo" loading="lazy" width="80" height="80">
+                <img src="assets/skillset_logos/react.svg" alt="React" class="skill-logo" loading="eager" fetchpriority="high" width="80" height="80">
                 <span class="skill-info">React</span>
             </div>
             <div class="card" data-skill="nodejs" role="button" tabindex="0" aria-label="Node.js - JavaScript runtime">
@@ -212,9 +213,6 @@
     </main>
     
     <!-- Scripts -->
-    <script src="scripts/nav.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/skills.js"></script>
-    <script src="scripts/title-cycle.js"></script>
+    <script src="scripts/home-combined.js"></script>
 </body>
 </html>

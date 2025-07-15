@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Modern JavaScript: ES6+ Features and Best Practices - Hyeonguk Roh | Web Development</title>
+  <meta name="title" content="Modern JavaScript: ES6+ Features and Best Practices - Hyeonguk Roh | Web Development">
+  <meta name="description" content="Master modern JavaScript with ES6+ features. Learn about arrow functions, destructuring, modules, async/await, and best practices for writing clean, maintainable JavaScript code.">
+  <meta name="keywords" content="Modern JavaScript, ES6, ES2015, JavaScript Tutorial, Arrow Functions, Destructuring, Modules, Async Await, JavaScript Best Practices, Web Development">
+  <meta name="author" content="Hyeonguk Roh">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://hyeonguk-roh.github.io/blog/posts/modern-javascript-es6-features-best-practices.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hyeonguk-roh.github.io/blog/posts/modern-javascript-es6-features-best-practices.html">
+  <meta property="og:title" content="Modern JavaScript: ES6+ Features and Best Practices - Hyeonguk Roh | Web Development">
+  <meta property="og:description" content="Master modern JavaScript with ES6+ features. Learn about arrow functions, destructuring, modules, async/await, and best practices for writing clean, maintainable JavaScript code.">
+  <meta property="og:image" content="https://hyeonguk-roh.github.io/assets/og-image.jpg">
+  <meta property="og:site_name" content="Hyeonguk Roh Portfolio">
+  <meta property="article:author" content="Hyeonguk Roh">
+  <meta property="article:published_time" content="2025-07-15T00:00:00+00:00">
+  <meta property="article:section" content="Web Development">
+  <meta property="article:tag" content="JavaScript, ES6, Modern JavaScript, Web Development, Programming, Tutorial">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://hyeonguk-roh.github.io/blog/posts/modern-javascript-es6-features-best-practices.html">
+  <meta property="twitter:title" content="Modern JavaScript: ES6+ Features and Best Practices - Hyeonguk Roh | Web Development">
+  <meta property="twitter:description" content="Master modern JavaScript with ES6+ features. Learn about arrow functions, destructuring, modules, async/await, and best practices for writing clean, maintainable JavaScript code.">
+  <meta property="twitter:image" content="https://hyeonguk-roh.github.io/assets/og-image.jpg">
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#131313">
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico?">
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/favicon.ico?">
+  <link rel="apple-touch-icon" href="../../assets/favicon.ico?">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="../../css/base.css" as="style">
+  <link rel="preload" href="../../css/navigation.css" as="style">
+  <link rel="preload" href="../../css/blog-post.css" as="style">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="../../css/shared.css">
+  <link rel="stylesheet" type="text/css" href="../../css/blog-post.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Modern JavaScript: ES6+ Features and Best Practices",
+    "description": "Master modern JavaScript with ES6+ features. Learn about arrow functions, destructuring, modules, async/await, and best practices for writing clean, maintainable JavaScript code.",
+    "image": "https://hyeonguk-roh.github.io/assets/og-image.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Hyeonguk Roh",
+      "jobTitle": "Game Developer & Software Engineer",
+      "url": "https://hyeonguk-roh.github.io"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Hyeonguk Roh"
+    },
+    "datePublished": "2025-07-15T00:00:00+00:00",
+    "dateModified": "2025-07-15T00:00:00+00:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hyeonguk-roh.github.io/blog/posts/modern-javascript-es6-features-best-practices.html"
+    },
+    "keywords": ["JavaScript", "ES6", "Modern JavaScript", "Web Development", "Programming", "Tutorial"],
+    "articleSection": "Web Development",
+    "inLanguage": "en-US"
+  }
+  </script>
+</head>
+<body>
+    <main>
+        <article class="post-container" role="article" aria-labelledby="post-title">
+            <header>
+                <h1 id="post-title">Modern JavaScript: ES6+ Features and Best Practices</h1>
+                <div class="post-metadata">
+                    <time id="post-date" datetime="2025-07-15">2025-07-15</time>
+                    <span id="post-author">Hyeonguk Roh</span>
+                </div>
+            </header>
+            
+            <div id="post-content" class="post-content">
+                <p>JavaScript has evolved significantly since its inception, with ES6 (ECMAScript 2015) marking a major milestone in the language's development. Modern JavaScript introduces powerful features that make code more readable, maintainable, and efficient. This comprehensive guide covers the essential ES6+ features and best practices for writing modern JavaScript.</p>
+                
+                <h2>What is ES6 and Why It Matters</h2>
+                <p>ES6 (ECMAScript 2015) was a major update to JavaScript that introduced many new features and syntax improvements. Since then, JavaScript has continued to evolve with annual releases, bringing new capabilities and improvements to the language.</p>
+                
+                <h3>Key Benefits of Modern JavaScript</h3>
+                <ul>
+                    <li><strong>Improved Readability:</strong> Cleaner, more expressive syntax</li>
+                    <li><strong>Better Performance:</strong> Optimized language features</li>
+                    <li><strong>Enhanced Maintainability:</strong> Modular code organization</li>
+                    <li><strong>Reduced Bugs:</strong> Stricter syntax and better error handling</li>
+                    <li><strong>Modern Development:</strong> Support for contemporary programming patterns</li>
+                </ul>
+                
+                <h2>Variable Declarations: let, const, and var</h2>
+                <p>ES6 introduced `let` and `const` as alternatives to `var`, providing better scoping and preventing common programming errors.</p>
+                
+                <h3>const - For Constants</h3>
+                <div class="code-example">
+                    <pre><code>// const creates immutable bindings
+const PI = 3.14159;
+const API_URL = 'https://api.example.com';
+const USER_ROLES = ['admin', 'user', 'guest'];
+
+// const prevents reassignment
+// PI = 3.14; // TypeError: Assignment to constant variable
+
+// However, const doesn't make objects immutable
+const user = { name: 'John', age: 30 };
+user.age = 31; // This works - object properties can be modified
+// user = {}; // This fails - can't reassign the variable</code></pre>
+                </div>
+                
+                <h3>let - For Block-Scoped Variables</h3>
+                <div class="code-example">
+                    <pre><code>// let provides block scope
+function example() {
+    let x = 1;
+    
+    if (true) {
+        let x = 2; // Different variable, block-scoped
+        console.log(x); // 2
+    }
+    
+    console.log(x); // 1
+}
+
+// Compare with var (function-scoped)
+function varExample() {
+    var x = 1;
+    
+    if (true) {
+        var x = 2; // Same variable, function-scoped
+        console.log(x); // 2
+    }
+    
+    console.log(x); // 2
+}</code></pre>
+                </div>
+                
+                <h2>Arrow Functions</h2>
+                <p>Arrow functions provide a concise syntax for writing function expressions and have lexical `this` binding.</p>
+                
+                <h3>Basic Arrow Function Syntax</h3>
+                <div class="code-example">
+                    <pre><code>// Traditional function
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow function equivalent
+const add = (a, b) => {
+    return a + b;
+};
+
+// Implicit return for single expressions
+const add = (a, b) => a + b;
+
+// Single parameter doesn't need parentheses
+const square = x => x * x;
+
+// No parameters need empty parentheses
+const getRandom = () => Math.random();
+
+// Multiple lines need explicit return
+const processData = (data) => {
+    const filtered = data.filter(item => item.active);
+    const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
+    return sorted;
+};</code></pre>
+                </div>
+                
+                <h3>Arrow Functions and this Context</h3>
+                <div class="code-example">
+                    <pre><code>// Traditional function - this context can change
+function Timer() {
+    this.seconds = 0;
+    
+    setInterval(function() {
+        this.seconds++; // this is undefined or window
+        console.log(this.seconds);
+    }, 1000);
+}
+
+// Arrow function - preserves this context
+function Timer() {
+    this.seconds = 0;
+    
+    setInterval(() => {
+        this.seconds++; // this refers to Timer instance
+        console.log(this.seconds);
+    }, 1000);
+}
+
+// Event handlers
+const button = document.querySelector('button');
+
+// Traditional function
+button.addEventListener('click', function() {
+    console.log(this); // button element
+});
+
+// Arrow function
+button.addEventListener('click', () => {
+    console.log(this); // window or undefined
+});</code></pre>
+                </div>
+                
+                <h2>Destructuring Assignment</h2>
+                <p>Destructuring allows you to extract values from arrays and objects into distinct variables using a syntax that mirrors the construction of array and object literals.</p>
+                
+                <h3>Array Destructuring</h3>
+                <div class="code-example">
+                    <pre><code>// Basic array destructuring
+const colors = ['red', 'green', 'blue'];
+const [first, second, third] = colors;
+console.log(first); // 'red'
+console.log(second); // 'green'
+console.log(third); // 'blue'
+
+// Skipping elements
+const [primary, , tertiary] = colors;
+console.log(primary); // 'red'
+console.log(tertiary); // 'blue'
+
+// Rest operator
+const [head, ...tail] = colors;
+console.log(head); // 'red'
+console.log(tail); // ['green', 'blue']
+
+// Default values
+const [a, b, c, d = 'yellow'] = colors;
+console.log(d); // 'yellow'
+
+// Swapping variables
+let x = 1, y = 2;
+[x, y] = [y, x];
+console.log(x, y); // 2, 1</code></pre>
+                </div>
+                
+                <h3>Object Destructuring</h3>
+                <div class="code-example">
+                    <pre><code>// Basic object destructuring
+const user = {
+    name: 'John Doe',
+    age: 30,
+    email: 'john@example.com',
+    address: {
+        city: 'New York',
+        country: 'USA'
+    }
+};
+
+const { name, age, email } = user;
+console.log(name); // 'John Doe'
+console.log(age); // 30
+
+// Renaming variables
+const { name: userName, age: userAge } = user;
+console.log(userName); // 'John Doe'
+console.log(userAge); // 30
+
+// Nested destructuring
+const { address: { city, country } } = user;
+console.log(city); // 'New York'
+console.log(country); // 'USA'
+
+// Default values
+const { name, age, role = 'user' } = user;
+console.log(role); // 'user'
+
+// Function parameters
+function processUser({ name, age, email }) {
+    console.log(`Processing ${name} (${age}) at ${email}`);
+}
+
+processUser(user); // Processing John Doe (30) at john@example.com</code></pre>
+                </div>
+                
+                <h2>Template Literals</h2>
+                <p>Template literals provide an easy way to create multiline strings and perform string interpolation.</p>
+                
+                <div class="code-example">
+                    <pre><code>// Basic template literals
+const name = 'John';
+const age = 30;
+const greeting = `Hello, my name is ${name} and I am ${age} years old.`;
+
+// Multiline strings
+const html = `
+&lt;div class="user-card"&gt;
+    &lt;h2&gt;${name}&lt;/h2&gt;
+    &lt;p&gt;Age: ${age}&lt;/p&gt;
+    &lt;button onclick="editUser('${name}')"&gt;Edit&lt;/button&gt;
+&lt;/div&gt;
+`;
+
+// Expressions in template literals
+const items = ['apple', 'banana', 'orange'];
+const list = `
+&lt;ul&gt;
+    ${items.map(item => `&lt;li&gt;${item}&lt;/li&gt;`).join('')}
+&lt;/ul&gt;
+`;
+
+// Tagged template literals
+function highlight(strings, ...values) {
+    let result = '';
+    strings.forEach((string, i) => {
+        result += string;
+        if (values[i]) {
+            result += `&lt;span class="highlight"&gt;${values[i]}&lt;/span&gt;`;
+        }
+    });
+    return result;
+}
+
+const highlighted = highlight`Hello ${name}, you are ${age} years old!`;</code></pre>
+                </div>
+                
+                <h2>Spread and Rest Operators</h2>
+                <p>The spread (`...`) operator allows you to expand elements, while the rest operator allows you to collect multiple elements into an array.</p>
+                
+                <h3>Spread Operator</h3>
+                <div class="code-example">
+                    <pre><code>// Array spreading
+const numbers = [1, 2, 3];
+const moreNumbers = [...numbers, 4, 5, 6];
+console.log(moreNumbers); // [1, 2, 3, 4, 5, 6]
+
+// Copying arrays
+const original = [1, 2, 3];
+const copy = [...original];
+console.log(copy); // [1, 2, 3]
+console.log(copy === original); // false
+
+// Merging arrays
+const fruits = ['apple', 'banana'];
+const vegetables = ['carrot', 'lettuce'];
+const food = [...fruits, ...vegetables];
+console.log(food); // ['apple', 'banana', 'carrot', 'lettuce']
+
+// Object spreading
+const person = { name: 'John', age: 30 };
+const employee = { ...person, id: 123, department: 'Engineering' };
+console.log(employee); // { name: 'John', age: 30, id: 123, department: 'Engineering' }
+
+// Copying objects
+const originalObj = { a: 1, b: 2 };
+const copyObj = { ...originalObj };
+console.log(copyObj); // { a: 1, b: 2 }
+console.log(copyObj === originalObj); // false
+
+// Merging objects
+const defaults = { theme: 'dark', language: 'en' };
+const userPrefs = { theme: 'light' };
+const settings = { ...defaults, ...userPrefs };
+console.log(settings); // { theme: 'light', language: 'en' }</code></pre>
+                </div>
+                
+                <h3>Rest Operator</h3>
+                <div class="code-example">
+                    <pre><code>// Function parameters
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4, 5)); // 15
+
+// Array destructuring
+const [first, second, ...rest] = [1, 2, 3, 4, 5];
+console.log(first); // 1
+console.log(second); // 2
+console.log(rest); // [3, 4, 5]
+
+// Object destructuring
+const { name, age, ...otherProps } = {
+    name: 'John',
+    age: 30,
+    city: 'New York',
+    country: 'USA'
+};
+console.log(name); // 'John'
+console.log(age); // 30
+console.log(otherProps); // { city: 'New York', country: 'USA' }</code></pre>
+                </div>
+                
+                <h2>Modules (ES6 Modules)</h2>
+                <p>ES6 modules provide a standardized way to organize and share code between files.</p>
+                
+                <h3>Exporting from Modules</h3>
+                <div class="code-example">
+                    <pre><code>// math.js - Named exports
+export const add = (a, b) => a + b;
+export const subtract = (a, b) => a - b;
+export const multiply = (a, b) => a * b;
+export const divide = (a, b) => a / b;
+
+// Default export
+const PI = 3.14159;
+export default PI;
+
+// Alternative: export at the end
+const utils = {
+    formatCurrency: (amount) => `$${amount.toFixed(2)}`,
+    formatDate: (date) => date.toLocaleDateString(),
+    generateId: () => Math.random().toString(36).substr(2, 9)
+};
+
+export { utils as default };
+export const { formatCurrency, formatDate, generateId } = utils;</code></pre>
+                </div>
+                
+                <h3>Importing Modules</h3>
+                <div class="code-example">
+                    <pre><code>// Named imports
+import { add, subtract, multiply } from './math.js';
+
+// Default import
+import PI from './math.js';
+
+// Renaming imports
+import { add as addNumbers, subtract as subtractNumbers } from './math.js';
+
+// Import everything as namespace
+import * as MathUtils from './math.js';
+console.log(MathUtils.add(5, 3)); // 8
+
+// Mixed imports
+import PI, { add, subtract } from './math.js';
+
+// Dynamic imports (ES2020)
+async function loadModule() {
+    const module = await import('./math.js');
+    console.log(module.add(2, 3)); // 5
+}</code></pre>
+                </div>
+                
+                <h2>Async/Await</h2>
+                <p>Async/await provides a more readable way to work with promises and asynchronous operations.</p>
+                
+                <h3>Basic Async/Await</h3>
+                <div class="code-example">
+                    <pre><code>// Traditional promise-based approach
+function fetchUser(id) {
+    return fetch(`/api/users/${id}`)
+        .then(response => response.json())
+        .then(user => {
+            console.log(user);
+            return user;
+        })
+        .catch(error => {
+            console.error('Error fetching user:', error);
+        });
+}
+
+// Async/await approach
+async function fetchUser(id) {
+    try {
+        const response = await fetch(`/api/users/${id}`);
+        const user = await response.json();
+        console.log(user);
+        return user;
+    } catch (error) {
+        console.error('Error fetching user:', error);
+    }
+}
+
+// Multiple async operations
+async function fetchUserAndPosts(userId) {
+    try {
+        const [user, posts] = await Promise.all([
+            fetch(`/api/users/${userId}`).then(res => res.json()),
+            fetch(`/api/users/${userId}/posts`).then(res => res.json())
+        ]);
+        
+        return { user, posts };
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}</code></pre>
+                </div>
+                
+                <h3>Error Handling with Async/Await</h3>
+                <div class="code-example">
+                    <pre><code>// Proper error handling
+async function processData() {
+    try {
+        const data = await fetchData();
+        const processed = await processData(data);
+        const result = await saveData(processed);
+        return result;
+    } catch (error) {
+        if (error.name === 'NetworkError') {
+            console.error('Network error occurred');
+        } else if (error.name === 'ValidationError') {
+            console.error('Data validation failed');
+        } else {
+            console.error('Unexpected error:', error);
+        }
+        throw error; // Re-throw to let caller handle it
+    }
+}
+
+// Async functions in loops
+async function processItems(items) {
+    const results = [];
+    
+    // Sequential processing
+    for (const item of items) {
+        const result = await processItem(item);
+        results.push(result);
+    }
+    
+    // Parallel processing
+    const promises = items.map(item => processItem(item));
+    const parallelResults = await Promise.all(promises);
+    
+    return { sequential: results, parallel: parallelResults };
+}</code></pre>
+                </div>
+                
+                <h2>Classes</h2>
+                <p>ES6 classes provide a more familiar syntax for creating objects and implementing inheritance.</p>
+                
+                <div class="code-example">
+                    <pre><code>// Basic class definition
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    sayHello() {
+        return `Hello, my name is ${this.name}`;
+    }
+    
+    get info() {
+        return `${this.name} is ${this.age} years old`;
+    }
+    
+    set info(value) {
+        [this.name, this.age] = value.split(' is ');
+        this.age = parseInt(this.age);
+    }
+}
+
+// Inheritance
+class Employee extends Person {
+    constructor(name, age, department) {
+        super(name, age);
+        this.department = department;
+    }
+    
+    work() {
+        return `${this.name} is working in ${this.department}`;
+    }
+    
+    // Override method
+    sayHello() {
+        return `${super.sayHello()} and I work in ${this.department}`;
+    }
+}
+
+// Static methods
+class MathUtils {
+    static add(a, b) {
+        return a + b;
+    }
+    
+    static multiply(a, b) {
+        return a * b;
+    }
+}
+
+console.log(MathUtils.add(5, 3)); // 8</code></pre>
+                </div>
+                
+                <h2>Best Practices for Modern JavaScript</h2>
+                <p>Following these best practices will help you write cleaner, more maintainable JavaScript code.</p>
+                
+                <h3>Code Organization</h3>
+                <ul>
+                    <li>Use meaningful variable and function names</li>
+                    <li>Keep functions small and focused on a single responsibility</li>
+                    <li>Use modules to organize related functionality</li>
+                    <li>Prefer composition over inheritance</li>
+                    <li>Use consistent formatting and indentation</li>
+                </ul>
+                
+                <h3>Performance Considerations</h3>
+                <ul>
+                    <li>Avoid creating functions inside loops</li>
+                    <li>Use appropriate data structures for your use case</li>
+                    <li>Minimize DOM manipulations</li>
+                    <li>Use debouncing for frequent events</li>
+                    <li>Lazy load modules when possible</li>
+                </ul>
+                
+                <h3>Error Handling</h3>
+                <ul>
+                    <li>Always handle promise rejections</li>
+                    <li>Use try-catch blocks for async operations</li>
+                    <li>Provide meaningful error messages</li>
+                    <li>Log errors appropriately for debugging</li>
+                    <li>Implement graceful degradation</li>
+                </ul>
+                
+                <h2>Conclusion</h2>
+                <p>Modern JavaScript with ES6+ features has transformed the language into a powerful, expressive tool for web development. By mastering these features and following best practices, you can write cleaner, more maintainable, and more efficient code.</p>
+                
+                <p>Remember that JavaScript continues to evolve, with new features being added regularly. Stay updated with the latest ECMAScript proposals and browser support to take advantage of the newest capabilities.</p>
+                
+                <p>Start incorporating these features into your projects gradually, and you'll soon find yourself writing more elegant and powerful JavaScript code. Happy coding!</p>
+            </div>
+            
+            <footer class="post-footer">
+                <a href="../../links/blog.html" class="back-link">← Back to all posts</a>
+            </footer>
+        </article>
+    </main>
+    
+    <!-- Scripts -->
+    <script src="../../scripts/nav.js"></script>
+    <script src="../../scripts/script.js"></script>
+</body>
+</html> 
