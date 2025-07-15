@@ -1,0 +1,39 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', monospace;
+  background: #131313;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Main Section */
+main {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  margin-top: 10px;
+  position: relative;
+}
+
+main h1 {
+  font-size: clamp(1.5rem, 4vw, 5rem);
+  font-weight: bold;
+  color: white;
+}
+
+main p {
+  font-size: clamp(1rem, 3vw, 2.5rem);
+  font-weight: bold;
+  padding-top: 1rem;
+  color: white;
+} 

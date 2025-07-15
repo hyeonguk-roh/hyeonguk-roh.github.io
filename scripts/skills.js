@@ -46,13 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const textLength = skillInfo.textContent.length;
     
     card.addEventListener('mouseenter', () => {
-      card.style.background = 'rgba(255, 255, 255, 0.1)';
-      card.style.border = '1px solid rgba(255, 255, 255, 0.2)';
+      
       
       const skillLogo = card.querySelector('.skill-logo');
       const skillInfo = card.querySelector('.skill-info');
       
-      skillLogo.style.opacity = '0';
+      skillLogo.style.opacity = '0.3';
       skillInfo.style.opacity = '1';
       skillInfo.style.visibility = 'visible';
       
@@ -68,8 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     card.addEventListener('mouseleave', () => {
-      card.style.background = 'white';
-      card.style.border = 'none';
+      card.style.border = '2px solid rgb(255, 255, 255)';
       
       const skillLogo = card.querySelector('.skill-logo');
       const skillInfo = card.querySelector('.skill-info');
