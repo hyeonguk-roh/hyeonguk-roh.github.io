@@ -4,7 +4,10 @@
  */
 const blogPreviews = document.querySelector('.blog-posts');
 const postsDirectory = '../blog/posts'; // Directory containing blog post HTML files
-const postFiles = ['example.html']; // List of post files (update dynamically if possible)
+const postFiles = [
+  '07-14-2025-css-units-of-length.html',
+  '07-14-2025-creating-html-blog.html'
+]; // List of post files (update dynamically if possible)
 
 // Function to fetch and parse a single blog post
 async function fetchBlogPost(file) {

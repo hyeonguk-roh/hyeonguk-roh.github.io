@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Creating a Blog in HTML: A Complete Guide - Hyeonguk Roh | Web Development</title>
+  <meta name="title" content="Creating a Blog in HTML: A Complete Guide - Hyeonguk Roh | Web Development">
+  <meta name="description" content="Learn how to create a professional blog using pure HTML, CSS, and JavaScript. Step-by-step guide covering structure, styling, navigation, and best practices for a modern blog.">
+  <meta name="keywords" content="HTML Blog, Web Development, Blog Creation, Static Site, HTML Tutorial, CSS Blog, JavaScript Blog, Web Design, Portfolio Blog">
+  <meta name="author" content="Hyeonguk Roh">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://hyeonguk-roh.github.io/blog/posts/creating-html-blog.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hyeonguk-roh.github.io/blog/posts/creating-html-blog.html">
+  <meta property="og:title" content="Creating a Blog in HTML: A Complete Guide - Hyeonguk Roh | Web Development">
+  <meta property="og:description" content="Learn how to create a professional blog using pure HTML, CSS, and JavaScript. Step-by-step guide covering structure, styling, navigation, and best practices for a modern blog.">
+  <meta property="og:image" content="https://hyeonguk-roh.github.io/assets/og-image.jpg">
+  <meta property="og:site_name" content="Hyeonguk Roh Portfolio">
+  <meta property="article:author" content="Hyeonguk Roh">
+  <meta property="article:published_time" content="2025-07-14T00:00:00+00:00">
+  <meta property="article:section" content="Web Development">
+  <meta property="article:tag" content="HTML, Web Development, Blog Creation, Static Site, Tutorial">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://hyeonguk-roh.github.io/blog/posts/creating-html-blog.html">
+  <meta property="twitter:title" content="Creating a Blog in HTML: A Complete Guide - Hyeonguk Roh | Web Development">
+  <meta property="twitter:description" content="Learn how to create a professional blog using pure HTML, CSS, and JavaScript. Step-by-step guide covering structure, styling, navigation, and best practices for a modern blog.">
+  <meta property="twitter:image" content="https://hyeonguk-roh.github.io/assets/og-image.jpg">
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#131313">
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico?">
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/favicon.ico?">
+  <link rel="apple-touch-icon" href="../../assets/favicon.ico?">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="../../css/base.css" as="style">
+  <link rel="preload" href="../../css/navigation.css" as="style">
+  <link rel="preload" href="../../css/blog-post.css" as="style">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="../../css/shared.css">
+  <link rel="stylesheet" type="text/css" href="../../css/blog-post.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Creating a Blog in HTML: A Complete Guide",
+    "description": "Learn how to create a professional blog using pure HTML, CSS, and JavaScript. Step-by-step guide covering structure, styling, navigation, and best practices for a modern blog.",
+    "image": "https://hyeonguk-roh.github.io/assets/og-image.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Hyeonguk Roh",
+      "jobTitle": "Game Developer & Software Engineer",
+      "url": "https://hyeonguk-roh.github.io"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Hyeonguk Roh"
+    },
+    "datePublished": "2025-07-14T00:00:00+00:00",
+    "dateModified": "2025-07-14T00:00:00+00:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hyeonguk-roh.github.io/blog/posts/creating-html-blog.html"
+    },
+    "keywords": ["HTML", "Web Development", "Blog Creation", "Static Site", "Tutorial"],
+    "articleSection": "Web Development",
+    "inLanguage": "en-US"
+  }
+  </script>
+</head>
+<body>
+    <main>
+        <article class="post-container" role="article" aria-labelledby="post-title">
+            <header>
+                <h1 id="post-title">Creating a Blog in HTML: A Complete Guide</h1>
+                <div class="post-metadata">
+                    <time id="post-date" datetime="2025-07-14">2025-07-14</time>
+                    <span id="post-author">Hyeonguk Roh</span>
+                </div>
+            </header>
+            
+            <div id="post-content" class="post-content">
+                <p>Creating a blog using pure HTML, CSS, and JavaScript might seem old-fashioned in today's world of React, Next.js, and other modern frameworks. However, there's something elegant about a static HTML blog that loads instantly, requires no build process, and gives you complete control over every aspect of your site.</p>
+                
+                <h2>Why Choose a Static HTML Blog?</h2>
+                <p>Before diving into the implementation, let's understand why you might choose this approach:</p>
+                <ul>
+                    <li><strong>Performance:</strong> Static HTML files load incredibly fast</li>
+                    <li><strong>Simplicity:</strong> No build tools, dependencies, or complex setup</li>
+                    <li><strong>Control:</strong> Complete ownership of your code and design</li>
+                    <li><strong>Hosting:</strong> Can be hosted anywhere - GitHub Pages, Netlify, or any web server</li>
+                    <li><strong>SEO:</strong> Search engines love static HTML</li>
+                </ul>
+                
+                <h2>Project Structure</h2>
+                <p>Let's start with a clean, organized file structure that scales well:</p>
+                <div class="code-example">
+                    <pre><code>my-blog/
+├── index.html
+├── css/
+│   ├── base.css
+│   ├── navigation.css
+│   ├── home.css
+│   ├── blog-list.css
+│   ├── blog-post.css
+│   └── shared.css
+├── scripts/
+│   ├── nav.js
+│   ├── blog-organizer.js
+│   └── script.js
+├── assets/
+│   ├── favicon.ico
+│   └── images/
+├── links/
+│   ├── blog.html
+│   ├── projects.html
+│   └── contact.html
+└── blog/
+    └── posts/
+        ├── example.html
+        └── creating-html-blog.html</code></pre>
+                </div>
+                
+                <h2>HTML Structure and Naming Convention</h2>
+                <p>Following a consistent naming convention is crucial for maintainability:</p>
+                
+                <h3>File Naming</h3>
+                <ul>
+                    <li><strong>Blog posts:</strong> Use kebab-case (e.g., <code>creating-html-blog.html</code>)</li>
+                    <li><strong>CSS files:</strong> Descriptive names (e.g., <code>blog-post.css</code>)</li>
+                    <li><strong>JavaScript:</strong> Functional names (e.g., <code>blog-organizer.js</code>)</li>
+                </ul>
+                
+                <h3>HTML Template Structure</h3>
+                <p>Each blog post should follow this consistent structure:</p>
+                <div class="code-example">
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  
+  &lt;!-- SEO Meta Tags --&gt;
+  &lt;title&gt;Post Title - Author Name | Category&lt;/title&gt;
+  &lt;meta name="description" content="Post description"&gt;
+  &lt;meta name="keywords" content="keyword1, keyword2"&gt;
+  
+  &lt;!-- Open Graph / Social Media --&gt;
+  &lt;meta property="og:title" content="Post Title"&gt;
+  &lt;meta property="og:description" content="Post description"&gt;
+  
+  &lt;!-- Stylesheets --&gt;
+  &lt;link rel="stylesheet" href="../../css/base.css"&gt;
+  &lt;link rel="stylesheet" href="../../css/blog-post.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;main&gt;
+    &lt;article class="post-container"&gt;
+      &lt;header&gt;
+        &lt;h1 id="post-title"&gt;Post Title&lt;/h1&gt;
+        &lt;div class="post-metadata"&gt;
+          &lt;time datetime="YYYY-MM-DD"&gt;YYYY-MM-DD&lt;/time&gt;
+          &lt;span&gt;Author Name&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+      
+      &lt;div class="post-content"&gt;
+        &lt;!-- Content here --&gt;
+      &lt;/div&gt;
+      
+      &lt;footer class="post-footer"&gt;
+        &lt;div class="post-tags"&gt;
+          &lt;span class="post-tag"&gt;Tag1&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+          &lt;a href="../../links/blog.html"&gt;← Back to all posts&lt;/a&gt;
+        &lt;/nav&gt;
+      &lt;/footer&gt;
+    &lt;/article&gt;
+  &lt;/main&gt;
+  
+  &lt;script src="../../scripts/nav.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+                
+                <h2>CSS Organization</h2>
+                <p>Separate your CSS into logical files for better maintainability:</p>
+                
+                <h3>base.css</h3>
+                <p>Global styles, resets, and typography:</p>
+                <div class="code-example">
+                    <pre><code>/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+}</code></pre>
+                </div>
+                
+                <h3>navigation.css</h3>
+                <p>Navigation bar styles:</p>
+                <div class="code-example">
+                    <pre><code>.nav-container {
+  background: #131313;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;
+}</code></pre>
+                </div>
+                
+                <h2>JavaScript for Dynamic Features</h2>
+                <p>Even a static blog needs some JavaScript for interactivity:</p>
+                
+                <h3>Navigation Script (nav.js)</h3>
+                <p>Handles dynamic navigation generation and path resolution:</p>
+                <div class="code-example">
+                    <pre><code>function createNav() {
+  const nav = document.createElement('nav');
+  nav.className = 'nav-container';
+  
+  const currentPath = window.location.pathname;
+  const isMainPage = currentPath === '/' || currentPath.endsWith('index.html');
+  const isBlogPost = currentPath.includes('/blog/posts/');
+  
+  // Determine correct path prefix
+  let pathPrefix = '';
+  if (isMainPage) {
+    pathPrefix = '';
+  } else if (isBlogPost) {
+    pathPrefix = '../../';
+  } else {
+    pathPrefix = '../';
+  }
+  
+  nav.innerHTML = `
+    &lt;div class="logo"&gt;
+      &lt;a href="${pathPrefix}index.html"&gt;Your Logo&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="nav-links"&gt;
+      &lt;a href="${pathPrefix}links/projects.html"&gt;Projects&lt;/a&gt;
+      &lt;a href="${pathPrefix}links/blog.html"&gt;Blog&lt;/a&gt;
+      &lt;a href="${pathPrefix}links/contact.html"&gt;Contact&lt;/a&gt;
+    &lt;/div&gt;
+  `;
+  
+  return nav;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const body = document.body;
+  const nav = createNav();
+  body.insertBefore(nav, body.firstChild);
+});</code></pre>
+                </div>
+                
+                <h3>Blog Organizer (blog-organizer.js)</h3>
+                <p>Dynamically loads and displays blog posts:</p>
+                <div class="code-example">
+                    <pre><code>async function loadBlogPosts() {
+  const blogPosts = [
+    {
+      title: 'Creating a Blog in HTML: A Complete Guide',
+      description: 'Learn how to create a professional blog using pure HTML...',
+      date: '2025-07-14',
+      filename: 'creating-html-blog.html',
+      tags: ['HTML', 'Web Development', 'Tutorial']
+    }
+    // Add more posts here
+  ];
+  
+  const container = document.querySelector('.blog-posts');
+  
+  blogPosts.forEach(post => {
+    const postElement = createPostCard(post);
+    container.appendChild(postElement);
+  });
+}
+
+function createPostCard(post) {
+  const card = document.createElement('a');
+  card.href = `posts/${post.filename}`;
+  card.className = 'blog-card';
+  
+  card.innerHTML = `
+    &lt;h3&gt;${post.title}&lt;/h3&gt;
+    &lt;p&gt;${post.description}&lt;/p&gt;
+    &lt;div class="post-meta"&gt;
+      &lt;time&gt;${post.date}&lt;/time&gt;
+      &lt;div class="tags"&gt;
+        ${post.tags.map(tag => `&lt;span class="tag"&gt;${tag}&lt;/span&gt;`).join('')}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  `;
+  
+  return card;
+}</code></pre>
+                </div>
+                
+                <h2>SEO and Accessibility</h2>
+                <p>Don't forget about SEO and accessibility features:</p>
+                
+                <h3>Meta Tags</h3>
+                <div class="code-example">
+                    <pre><code>&lt;!-- Essential meta tags --&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="description" content="Your post description"&gt;
+&lt;meta name="keywords" content="relevant, keywords, here"&gt;
+
+&lt;!-- Open Graph for social sharing --&gt;
+&lt;meta property="og:title" content="Post Title"&gt;
+&lt;meta property="og:description" content="Post description"&gt;
+&lt;meta property="og:type" content="article"&gt;
+
+&lt;!-- Structured data for search engines --&gt;
+&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Post Title",
+  "author": {
+    "@type": "Person",
+    "name": "Your Name"
+  }
+}
+&lt;/script&gt;</code></pre>
+                </div>
+                
+                <h3>Accessibility Features</h3>
+                <div class="code-example">
+                    <pre><code>&lt;!-- Semantic HTML --&gt;
+&lt;article class="post-container" role="article" aria-labelledby="post-title"&gt;
+  &lt;h1 id="post-title"&gt;Post Title&lt;/h1&gt;
+  
+  &lt;nav aria-label="Post navigation"&gt;
+    &lt;a href="../../links/blog.html" aria-label="Back to blog list"&gt;
+      ← Back to all posts
+    &lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/article&gt;</code></pre>
+                </div>
+                
+                <h2>Deployment and Hosting</h2>
+                <p>Once your blog is ready, you have several hosting options:</p>
+                
+                <h3>GitHub Pages</h3>
+                <p>Perfect for static sites and completely free:</p>
+                <div class="code-example">
+                    <pre><code># Create a new repository
+git init
+git add .
+git commit -m "Initial blog setup"
+git remote add origin https://github.com/username/repo-name.git
+git push -u origin main
+
+# Enable GitHub Pages in repository settings</code></pre>
+                </div>
+                
+                <h3>Netlify</h3>
+                <p>Drag and drop deployment with additional features:</p>
+                <ul>
+                    <li>Drag your entire blog folder to Netlify's deploy area</li>
+                    <li>Get a custom domain and SSL certificate</li>
+                    <li>Automatic deployments from Git</li>
+                </ul>
+                
+                <h2>Best Practices</h2>
+                <ul>
+                    <li><strong>Keep it simple:</strong> Don't over-engineer your static blog</li>
+                    <li><strong>Optimize images:</strong> Use WebP format and appropriate sizes</li>
+                    <li><strong>Minimize HTTP requests:</strong> Combine CSS files when possible</li>
+                    <li><strong>Use semantic HTML:</strong> Helps with SEO and accessibility</li>
+                    <li><strong>Test across browsers:</strong> Ensure compatibility</li>
+                    <li><strong>Regular backups:</strong> Keep your source files safe</li>
+                </ul>
+                
+                <h2>Conclusion</h2>
+                <p>Creating a blog in HTML might seem like a step back in time, but it offers unique advantages in terms of performance, simplicity, and control. By following the structure and conventions outlined in this guide, you can create a professional, fast-loading blog that's easy to maintain and customize.</p>
+                
+                <p>Remember, the best blog is the one you'll actually use and maintain. Start simple, focus on content, and gradually add features as needed. Your readers will appreciate the fast loading times and clean, distraction-free reading experience.</p>
+            </div>
+            
+            <footer class="post-footer">
+                <div id="post-tags" class="post-tags">
+                    <span class="post-tag">HTML</span>
+                    <span class="post-tag">Web Development</span>
+                    <span class="post-tag">Blog Creation</span>
+                    <span class="post-tag">Static Site</span>
+                    <span class="post-tag">Tutorial</span>
+                </div>
+                <a href="../../links/blog.html" class="back-to-blog">← Back to all posts</a>
+            </footer>
+        </article>
+    </main>
+    <script src="../../scripts/nav.js"></script>
+    <script src="../../scripts/script.js"></script>
+</body>
+</html> 

@@ -39,13 +39,13 @@ main {
 }
 
 main h1 {
-  font-size: clamp(1.5rem, 4vw, 5rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: bold;
   color: white;
 }
 
 main p {
-  font-size: clamp(1rem, 3vw, 2.5rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   font-weight: bold;
   padding-top: 1rem;
   color: white;
