@@ -1,4 +1,6 @@
 /* Home Page Styles */
+
+/* Title Text Animation */
 .title-text p:first-child {
   overflow: hidden;
   height: 2.5em;
@@ -10,6 +12,7 @@
   justify-content: center;
 }
 
+/* Main Title Container */
 .title {
   display: flex;
   flex-direction: column;
@@ -30,7 +33,7 @@
   gap: 1rem;
 }
 
-/* Skill Section */
+/* Skill Section - Orbiting Cards */
 .skill-section {
   position: fixed;
   top: 55%;
@@ -40,7 +43,7 @@
   height: 150px;
 }
 
-/* Card Styles */
+/* Individual Skill Cards */
 .card {
   width: 80px;
   height: 80px;
@@ -59,6 +62,7 @@
   transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
+/* Skill Logo Images */
 .skill-logo {
   width: 100%;
   height: 100%;
@@ -70,11 +74,13 @@
   transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
+/* Hover Effects for Skill Logos */
 .card:hover .skill-logo {
   filter: blur(2px);
   opacity: 0.7;
 }
 
+/* Skill Info Text (appears on hover) */
 .skill-info {
   position: absolute;
   top: 50%;
@@ -89,11 +95,12 @@
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
+/* Focus State for Accessibility */
 .card:focus {
   outline: 2px solid #60a5fa;
 }
 
-/* Responsive Skill Section */
+/* Responsive Design for Skill Section */
 @media (max-width: 1024px) {
   .skill-section {
     width: 200px;

@@ -1,4 +1,6 @@
 /* Shared Page Styles */
+
+/* Splash Text - Used across multiple pages */
 .splash-text {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: #a1a1aa;

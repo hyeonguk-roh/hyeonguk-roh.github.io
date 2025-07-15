@@ -1,4 +1,4 @@
-/* Reuseable Navigation Bar Styles */
+/* Reusable Navigation Bar Styles */
 nav {
   position: fixed;
   top: 0;
@@ -21,12 +21,14 @@ nav {
   box-sizing: border-box;
 }
 
+/* Logo */
 .logo {
   font-size: 2rem;
   font-weight: bold;
   color: white;
 }
 
+/* Hamburger Menu Button */
 .hamburger {
   display: none;
   background: none;
@@ -37,6 +39,7 @@ nav {
   padding: 0.5rem;
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -48,12 +51,12 @@ nav {
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: #60a5fa;
 }
 
 .nav-links a.active {
-  color: #60a5fa;
   font-weight: 600;
 }
 

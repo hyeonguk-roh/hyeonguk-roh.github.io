@@ -1,5 +1,6 @@
-/* blog-list.css - Blog list and preview styling */
+/* Blog List and Preview Styling */
 
+/* Main Blog Container */
 .blog-container {
   max-width: 800px;
   margin: 0 auto;
@@ -13,6 +14,7 @@
   text-align: center;
 }
 
+/* Splash Text */
 .splash-text {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: #a1a1aa;
@@ -22,6 +24,7 @@
   text-align: center;
 }
 
+/* Blog Posts Container */
 .blog-posts {
   display: flex;
   flex-direction: column;
@@ -29,52 +32,7 @@
   margin-top: 2rem;
 }
 
-/* Loading state */
-.loading {
-  text-align: center;
-  padding: 3rem;
-  color: #a1a1aa;
-  font-style: italic;
-}
-
-/* Error state */
-.error-message {
-  text-align: center;
-  padding: 2rem;
-  background: rgba(220, 38, 38, 0.1);
-  border: 1px solid rgba(220, 38, 38, 0.3);
-  border-radius: 8px;
-  color: #fca5a5;
-}
-
-.error-message p {
-  margin-bottom: 1rem;
-}
-
-.retry-btn {
-  background: #dc2626;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-family: inherit;
-}
-
-.retry-btn:hover {
-  background: #b91c1c;
-}
-
-/* No posts state */
-.no-posts {
-  text-align: center;
-  padding: 3rem;
-  color: #a1a1aa;
-  font-style: italic;
-}
-
-/* Blog preview cards */
+/* Blog Preview Cards */
 .blog-preview {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -83,12 +41,21 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
+/* Hover Effects for Blog Preview Cards */
 .blog-preview:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   border-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Preview Link */
+.blog-preview a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Preview Content */
 .preview-content {
   padding: 1.5rem;
   transition: background-color 0.3s ease;
@@ -98,6 +65,7 @@
   background-color: rgba(255, 255, 255, 0.02);
 }
 
+/* Preview Header */
 .preview-header h2 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
@@ -111,6 +79,7 @@
   color: #60a5fa;
 }
 
+/* Preview Metadata */
 .preview-meta {
   display: flex;
   gap: 1rem;
@@ -123,10 +92,11 @@
   font-weight: 500;
 }
 
-.reading-time {
+.preview-meta .author {
   color: #71717a;
 }
 
+/* Preview Excerpt */
 .preview-excerpt {
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -138,53 +108,7 @@
   margin-bottom: 0.5rem;
 }
 
-.preview-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
-}
-
-.tag {
-  background: rgba(96, 165, 250, 0.2);
-  color: #60a5fa;
-  padding: 0.2rem 0.6rem;
-  border-radius: 16px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  border: 1px solid rgba(96, 165, 250, 0.3);
-  transition: background-color 0.3s;
-}
-
-.tag:hover {
-  background: rgba(96, 165, 250, 0.3);
-}
-
-.read-more-btn {
-  background: #60a5fa;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  font-family: inherit;
-  font-size: 0.9rem;
-}
-
-.read-more-btn:hover {
-  background: #3b82f6;
-  transform: translateY(-1px);
-}
-
-.read-more-btn:disabled {
-  background: #6b7280;
-  cursor: not-allowed;
-  transform: none;
-}
-
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 768px) {
   .blog-container {
     padding: 1rem;

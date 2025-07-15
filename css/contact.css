@@ -1,4 +1,6 @@
 /* Contact Page Styles */
+
+/* Main Contact Container */
 .contact-container {
   max-width: 600px;
   margin: 0 auto;
@@ -12,7 +14,12 @@
   color: white;
 }
 
-/* Contact Icons */
+/* Contact Links Container */
+.contact-links {
+  margin-top: 2rem;
+}
+
+/* Contact Icons Container */
 .icon-container {
   display: flex;
   gap: 3rem;
@@ -21,6 +28,7 @@
   margin-top: 2rem;
 }
 
+/* Individual Contact Icon Wrapper */
 .icon-wrapper {
   width: 100px;
   height: 100px;
@@ -37,10 +45,12 @@
   transition: background 0.3s ease-in-out, border 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+/* Hover Effect - Scale Up */
 .icon-wrapper:hover {
   transform: scale(1.2);
 }
 
+/* Contact Icon Images */
 .icon-wrapper img {
   width: 100%;
   height: 100%;
@@ -52,11 +62,13 @@
   transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
+/* Hover Effects for Contact Icons */
 .icon-wrapper:hover img {
   filter: blur(4px);
   opacity: 0.4;
 }
 
+/* Contact Info Text (appears on hover) */
 .contact-info {
   position: absolute;
   top: 50%;
@@ -72,12 +84,13 @@
   font-size: 0.9rem;
 }
 
+/* Show Contact Info on Hover */
 .icon-wrapper:hover .contact-info {
   visibility: visible;
   opacity: 1;
 }
 
-/* Responsive Contact Icons */
+/* Responsive Design for Contact Icons */
 @media (max-width: 1024px) {
   .icon-wrapper {
     width: 70px;
