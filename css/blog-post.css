@@ -127,15 +127,17 @@
 
 /* Back to Blog Link */
 .back-to-blog {
-  color: #60a5fa;
+  color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   display: inline-block;
+  transform: scale(1);
 }
 
 .back-to-blog:hover {
-  color: #3b82f6;
+  color: #0ea5e9;
+  transform: scale(1.05);
 }
 
 /* Responsive Design */
