@@ -1,5 +1,5 @@
-// ===== COMBINED JAVASCRIPT FOR HOME PAGE =====
-// This file combines nav.js, script.js, skills.js, and title-cycle.js to reduce HTTP requests
+// ===== COMBINED JAVASCRIPT FILE =====
+// This file combines all JavaScript files to reduce HTTP requests
 
 // ===== NAVIGATION COMPONENT =====
 // nav.js - Reusable navigation component
@@ -10,16 +10,14 @@ function createNav() {
   // Get current page path to determine active link and correct path prefix
   const currentPath = window.location.pathname;
   const isMainPage = currentPath === '/' || currentPath.endsWith('index.html');
-  const isBlogPost = currentPath.includes('/blog/posts/');
-  const isProjectsPage = currentPath.includes('projects.html');
-  const isBlogPage = currentPath.includes('blog.html');
-  const isContactPage = currentPath.includes('contact.html');
+  const isProjectsPage = currentPath.includes('/projects/') && !currentPath.includes('/rpg/') && !currentPath.includes('/toolbox/') && !currentPath.includes('/grid/');
+  const isContactPage = currentPath.includes('/contact/');
   
   // Determine the correct path prefix based on current location
   let pathPrefix = '';
   if (isMainPage) {
     pathPrefix = '';
-  } else if (isBlogPost) {
+  } else if (currentPath.includes('/projects/') && (currentPath.includes('/rpg/') || currentPath.includes('/toolbox/') || currentPath.includes('/grid/'))) {
     pathPrefix = '../../';
   } else {
     pathPrefix = '../';
@@ -34,9 +32,8 @@ function createNav() {
         <span class="hamburger-icon" aria-hidden="true">☰</span>
       </button>
       <div class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation links">
-        <a href="${pathPrefix}links/projects.html" ${isProjectsPage ? 'class="active"' : ''} aria-current="${isProjectsPage ? 'page' : 'false'}">Projects</a>
-        <a href="${pathPrefix}links/blog.html" ${isBlogPage ? 'class="active"' : ''} aria-current="${isBlogPage ? 'page' : 'false'}">Thoughts</a>
-        <a href="${pathPrefix}links/contact.html" ${isContactPage ? 'class="active"' : ''} aria-current="${isContactPage ? 'page' : 'false'}">Contact</a>
+        <a href="${pathPrefix}projects/" ${isProjectsPage ? 'class="active"' : ''} aria-current="${isProjectsPage ? 'page' : 'false'}">Projects</a>
+        <a href="${pathPrefix}contact/" ${isContactPage ? 'class="active"' : ''} aria-current="${isContactPage ? 'page' : 'false'}">Contact</a>
       </div>
     </div>
   `;
@@ -201,4 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Change title every 3 seconds (allowing time for animation)
   setInterval(cycleTitle, 3000);
-}); 
+});
+
+ 
